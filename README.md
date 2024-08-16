@@ -8,7 +8,6 @@ This project is a simple yet beautifully designed countdown timer website. It fe
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
-- [Customization](#customization)
 - [License](#license)
 
 ## Demo
