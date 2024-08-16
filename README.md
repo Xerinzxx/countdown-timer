@@ -12,7 +12,8 @@ This project is a simple yet beautifully designed countdown timer website. It fe
 
 ## Demo
 
-![Countdown Timer Screenshot](screenshot.png)
+![Countdown Timer Screenshot](![image](https://github.com/user-attachments/assets/55ea1914-ea06-4702-b536-12e2b3723c42)
+)
 
 ## Features
 
