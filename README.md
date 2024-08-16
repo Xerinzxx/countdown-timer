@@ -38,4 +38,4 @@ To run this project, you need a web browser that supports HTML5, CSS3, and JavaS
 1. Clone the repository or download the ZIP file.
 
    ```bash
-   git clone https://github.com/your-username/countdown-timer-website.git
+   git clone https://github.com/Xerinzxx/countdown-timer-website.git
