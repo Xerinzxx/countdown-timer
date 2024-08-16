@@ -1,3 +1,5 @@
+let interval;  // Declare the interval variable globally to keep track of the timer
+
 function startCountdown() {
     const input = document.getElementById("datetime-picker").value;
     if (!input) {
@@ -7,6 +9,11 @@ function startCountdown() {
 
     const countDate = new Date(input).getTime();
     document.getElementById("countdown").classList.remove("hidden");
+
+    // Clear any existing intervals before starting a new one
+    if (interval) {
+        clearInterval(interval);
+    }
 
     const countdown = () => {
         const now = new Date().getTime();
@@ -33,6 +40,7 @@ function startCountdown() {
         }
     };
 
-    const interval = setInterval(countdown, 1000);
-    countdown();
+    // Start the countdown and save the interval ID to the global variable
+    interval = setInterval(countdown, 1000);
+    countdown();  // Call countdown immediately to avoid 1-second delay
 }
