@@ -44,3 +44,20 @@ function startCountdown() {
     interval = setInterval(countdown, 1000);
     countdown();  // Call countdown immediately to avoid 1-second delay
 }
+
+function resetCountdown() {
+    // Clear the interval to stop the countdown
+    if (interval) {
+        clearInterval(interval);
+    }
+
+    // Hide the countdown display and reset the input field
+    document.getElementById("countdown").classList.add("hidden");
+    document.getElementById("datetime-picker").value = '';
+    
+    // Reset the countdown display to default values
+    document.getElementById("days").innerText = '00';
+    document.getElementById("hours").innerText = '00';
+    document.getElementById("minutes").innerText = '00';
+    document.getElementById("seconds").innerText = '00';
+}
